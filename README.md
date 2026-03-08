@@ -10,8 +10,6 @@ O projeto foi desenvolvido com foco em **boas práticas de backend**, incluindo:
 * Estrutura de rotas organizada
 * CRUD completo de usuários e produtos
 
----
-
 # 📌 Tecnologias Utilizadas
 
 * Node.js
@@ -21,9 +19,7 @@ O projeto foi desenvolvido com foco em **boas práticas de backend**, incluindo:
 * bcrypt
 * JSON Web Token (JWT)
 * dotenv
-
----
-
+* 
 # 📂 Estrutura do Projeto
 
 ```
@@ -51,7 +47,6 @@ Descrição:
 | produtos.js | Rotas de gerenciamento de produtos |
 | login.js    | Rota de autenticação               |
 
----
 
 # ⚙️ Instalação do Projeto
 
@@ -61,15 +56,11 @@ Descrição:
 git clone https://github.com/seu-usuario/seu-projeto.git
 ```
 
----
-
 ### 2️⃣ Entrar na pasta
 
 ```bash
 cd seu-projeto
 ```
-
----
 
 ### 3️⃣ Instalar as dependências
 
@@ -89,8 +80,6 @@ npm install @fastify/jwt
 npm install @fastify/cors
 ```
 
----
-
 # 🗄️ Configuração do Banco de Dados
 
 Crie um banco de dados no **MySQL**.
@@ -100,8 +89,6 @@ Exemplo:
 ```sql
 CREATE DATABASE loja_api;
 ```
-
----
 
 ## Tabela de Usuários
 
@@ -114,8 +101,6 @@ CREATE TABLE users (
 );
 ```
 
----
-
 ## Tabela de Produtos
 
 ```sql
@@ -125,8 +110,6 @@ CREATE TABLE produtos (
  preco DECIMAL(10,2)
 );
 ```
-
----
 
 # 🔐 Configuração do arquivo .env
 
@@ -149,8 +132,6 @@ JWT_SECRET=segredo_super_seguro
 
 Esse arquivo guarda **informações sensíveis do sistema**.
 
----
-
 # ▶️ Executando o Projeto
 
 Para iniciar o servidor:
@@ -164,8 +145,6 @@ Servidor rodará em:
 ```
 http://localhost:3000
 ```
-
----
 
 # 📡 Rotas da API
 
@@ -185,8 +164,6 @@ Body:
 }
 ```
 
----
-
 ### Listar usuários (rota protegida)
 
 GET /users
@@ -196,8 +173,6 @@ Header obrigatório:
 ```
 Authorization: Bearer TOKEN
 ```
-
----
 
 ### Atualizar usuário
 
@@ -210,14 +185,9 @@ Body:
  "nome": "Novo Nome"
 }
 ```
-
----
-
 ### Deletar usuário
 
 DELETE /users/:id
-
----
 
 # 🔑 Login
 
@@ -243,15 +213,11 @@ Resposta:
 
 Esse token deve ser usado nas rotas protegidas.
 
----
-
 # 📦 Produtos
 
 ### Listar produtos
 
 GET /produtos
-
----
 
 ### Criar produto (rota protegida)
 
@@ -264,19 +230,15 @@ POST /produtos
 }
 ```
 
----
-
 ### Atualizar produto
 
 PUT /produtos/:id
 
----
 
 ### Deletar produto
 
 DELETE /produtos/:id
 
----
 
 # 🔐 Autenticação
 
@@ -300,8 +262,6 @@ Receber token
 Usar token nas rotas protegidas
 ```
 
----
-
 # 🧪 Testando a API
 
 Você pode testar utilizando:
@@ -309,20 +269,6 @@ Você pode testar utilizando:
 * Postman
 * Insomnia
 * Thunder Client (VSCode)
-
----
-
-# 📈 Possíveis Melhorias
-
-Algumas melhorias que podem ser implementadas:
-
-* Validação de dados com Zod
-* Documentação com Swagger
-* ORM Prisma
-* Paginação de resultados
-* Deploy em servidor
-
----
 
 # 👩‍💻 Autor
 

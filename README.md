@@ -15,11 +15,10 @@ O projeto foi desenvolvido com foco em **boas práticas de backend**, incluindo:
 * Node.js
 * Fastify
 * MySQL
-* mysql2
 * bcrypt
 * JSON Web Token (JWT)
 * dotenv
-* 
+  
 # 📂 Estrutura do Projeto
 
 ```
@@ -48,7 +47,7 @@ Descrição:
 | login.js    | Rota de autenticação               |
 
 
-# ⚙️ Instalação do Projeto
+ ⚙️ Instalação do Projeto
 
 ### 1️⃣ Clonar o repositório
 
@@ -80,7 +79,7 @@ npm install @fastify/jwt
 npm install @fastify/cors
 ```
 
-# 🗄️ Configuração do Banco de Dados
+🗄️ Configuração do Banco de Dados
 
 Crie um banco de dados no **MySQL**.
 
